@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Salat</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 5rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1a1c1a;
+    background: #fff;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  .updated { color: #5c635c; font-size: .9rem; margin: 0 0 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .55rem .7rem; border-bottom: 1px solid #e3e6e3; vertical-align: top; }
+  th { font-weight: 600; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  hr { border: 0; border-top: 1px solid #e3e6e3; margin: 3.5rem 0 2.5rem; }
+  a { color: #1f6f4a; }
+  code { background: #f0f2f0; padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  .note { background: #f5f7f5; border-left: 3px solid #1f6f4a; padding: .8rem 1rem; margin: 1.2rem 0; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e2e4e2; background: #14171a; }
+    .updated { color: #9aa39a; }
+    th, td, hr { border-color: #2b3130; }
+    code, .note { background: #1d2124; }
+    a { color: #6fd3a3; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Politique de confidentialité — Salat</h1>
+<p class="updated">Dernière mise à jour : 5 août 2026</p>
+
+<p>
+  Salat affiche les horaires de prière et vous prévient à l'heure. Cette page
+  décrit exactement quelles données l'application manipule, où elles vont, et
+  ce que vous pouvez en faire.
+</p>
+
+<div class="note">
+  <strong>En bref :</strong> l'application n'a pas de serveur, ne crée pas de
+  compte et ne collecte rien pour nous. Deux services de Google interviennent
+  malgré tout : la conversion de vos coordonnées en nom de ville, et la
+  publicité. Les deux sont détaillés ci-dessous.
+</div>
+
+<h2>1. Ce que l'application utilise</h2>
+
+<table>
+  <tr><th>Donnée</th><th>Pourquoi</th><th>Où elle va</th></tr>
+  <tr>
+    <td>Position approximative (latitude / longitude)</td>
+    <td>Calculer les horaires de prière et la direction de la qibla — ils dépendent entièrement de l'endroit où vous êtes.</td>
+    <td>Reste sur l'appareil pour le calcul. Voir §2 pour le nom de la ville.</td>
+  </tr>
+  <tr>
+    <td>Nom de la ville et code pays</td>
+    <td>Vous montrer quel lieu est utilisé, et proposer la méthode de calcul adaptée à votre région.</td>
+    <td>Stocké sur l'appareil.</td>
+  </tr>
+  <tr>
+    <td>Vos réglages (méthode, sons, ajustements, langue, thème)</td>
+    <td>Retrouver l'application telle que vous l'avez laissée.</td>
+    <td>Stockés sur l'appareil.</td>
+  </tr>
+  <tr>
+    <td>Le fichier audio que vous choisissez comme adhan</td>
+    <td>Le jouer au moment de la prière.</td>
+    <td>Seule une référence au fichier est conservée. Le fichier n'est ni copié, ni envoyé.</td>
+  </tr>
+</table>
+
+<p>
+  Le calcul lui-même est entièrement local : une fois votre lieu enregistré,
+  Salat produit les horaires hors ligne, sans aucune connexion.
+</p>
+
+<p>
+  Nous n'avons pas de serveur. Il n'existe aucun compte Salat, et nous ne vous
+  demandons ni nom, ni adresse e-mail, ni numéro de téléphone.
+</p>
+
+<h2>2. Nom de la ville : vos coordonnées passent par Google</h2>
+
+<p>
+  Pour transformer des coordonnées en « Bruxelles, BE », l'application utilise
+  le service de géocodage d'Android. Sur la plupart des appareils, cette
+  opération est traitée par les serveurs de Google, ce qui signifie que
+  <strong>vos coordonnées quittent l'appareil à ce moment-là</strong>. Elles ne
+  nous sont jamais transmises et nous n'y avons pas accès.
+</p>
+
+<p>
+  Cette étape est facultative. Si elle échoue ou si vous êtes hors ligne,
+  l'application fonctionne normalement : seul le nom du lieu manque. Vous
+  pouvez aussi saisir votre ville à la main plutôt que d'utiliser la position
+  automatique.
+</p>
+
+<h2>3. Publicité</h2>
+
+<p>
+  Salat est gratuit et financé par la publicité, affichée via
+  <strong>Google AdMob</strong>. Pour proposer des annonces, AdMob peut
+  utiliser l'identifiant publicitaire de votre appareil, des informations
+  techniques sur celui-ci, et une localisation approximative déduite de votre
+  adresse IP.
+</p>
+
+<p>
+  Nous ne transmettons pas votre position GPS à AdMob, et nous ne fournissons
+  aucune donnée personnelle aux annonceurs.
+</p>
+
+<h3>Votre consentement dans l'EEE, au Royaume-Uni et en Suisse</h3>
+
+<p>
+  Avant la moindre publicité, un écran de consentement conforme au cadre IAB
+  TCF vous demande votre choix concernant la publicité personnalisée. Si vous
+  refusez, vous verrez des publicités non personnalisées : l'application reste
+  entièrement utilisable.
+</p>
+
+<p>
+  Vous pouvez revenir sur ce choix à tout moment depuis
+  <strong>Réglages → Options de confidentialité</strong> dans l'application.
+</p>
+
+<p>
+  Détail des données traitées par Google :
+  <a href="https://policies.google.com/technologies/partner-sites">politique de confidentialité de Google</a>.
+</p>
+
+<h2>4. Notifications</h2>
+
+<p>
+  Les rappels de prière sont programmés localement par Android. Aucune
+  notification ne transite par un serveur : il n'y a pas de push, et donc pas
+  de jeton d'appareil enregistré quelque part.
+</p>
+
+<h2>5. Conservation et suppression</h2>
+
+<p>
+  Toutes les données de l'application vivent dans son propre espace de
+  stockage sur votre téléphone.
+  <strong>Désinstaller Salat les efface entièrement.</strong>
+  Comme nous ne détenons rien, il n'y a rien à nous demander de supprimer.
+</p>
+
+<p>
+  Vous pouvez retirer l'autorisation de localisation à tout moment dans les
+  réglages d'Android. L'application continue de fonctionner : elle vous
+  demandera simplement de saisir votre ville.
+</p>
+
+<h2>6. Enfants</h2>
+
+<p>
+  Salat n'est pas destiné aux enfants de moins de 13 ans et ne leur est pas
+  spécifiquement adressé.
+</p>
+
+<h2>7. Vos droits (RGPD)</h2>
+
+<p>
+  Si vous résidez dans l'Espace économique européen, au Royaume-Uni ou en
+  Suisse, vous disposez d'un droit d'accès, de rectification, d'effacement,
+  de limitation, d'opposition et de portabilité.
+</p>
+
+<p>
+  En pratique : nous ne détenons aucune donnée vous concernant, donc ces
+  droits s'exercent directement depuis votre appareil — retrait de
+  l'autorisation, modification du consentement publicitaire, ou
+  désinstallation. Pour les données traitées par Google en tant que
+  responsable de traitement, adressez-vous à Google.
+</p>
+
+<h2>8. Modifications</h2>
+
+<p>
+  Toute modification de cette politique sera publiée sur cette page, avec une
+  nouvelle date de mise à jour.
+</p>
+
+<h2>9. Contact</h2>
+
+<p>
+  Pour toute question relative à cette politique :
+  <a href="mailto:chocham.123@gmail.com">chocham.123@gmail.com</a>
+</p>
+
+<hr>
+
+<h1>Privacy Policy — Salat</h1>
+<p class="updated">Last updated: 5 August 2026</p>
+
+<p>
+  Salat shows Muslim prayer times and alerts you when each one arrives. This
+  page sets out exactly what data the app handles, where it goes, and what you
+  can do about it.
+</p>
+
+<div class="note">
+  <strong>In short:</strong> the app has no server, creates no account and
+  collects nothing for us. Two Google services are nonetheless involved:
+  turning your coordinates into a city name, and advertising. Both are
+  detailed below.
+</div>
+
+<h2>1. What the app uses</h2>
+
+<table>
+  <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+  <tr>
+    <td>Approximate location (latitude / longitude)</td>
+    <td>To calculate prayer times and the qibla direction — both depend entirely on where you are.</td>
+    <td>Stays on the device for the calculation. See §2 for the city name.</td>
+  </tr>
+  <tr>
+    <td>City name and country code</td>
+    <td>To show you which place is being used, and to suggest the calculation method suited to your region.</td>
+    <td>Stored on the device.</td>
+  </tr>
+  <tr>
+    <td>Your settings (method, sounds, adjustments, language, theme)</td>
+    <td>To reopen the app as you left it.</td>
+    <td>Stored on the device.</td>
+  </tr>
+  <tr>
+    <td>The audio file you pick as your adhan</td>
+    <td>To play it at prayer time.</td>
+    <td>Only a reference to the file is kept. The file is neither copied nor uploaded.</td>
+  </tr>
+</table>
+
+<p>
+  The calculation itself is entirely local: once your place is saved, Salat
+  produces the times offline, with no connection at all.
+</p>
+
+<p>
+  We run no server. There is no Salat account, and we never ask for your name,
+  e-mail address or phone number.
+</p>
+
+<h2>2. City name: your coordinates pass through Google</h2>
+
+<p>
+  To turn coordinates into "Brussels, BE", the app uses Android's geocoding
+  service. On most devices this is handled by Google's servers, which means
+  <strong>your coordinates leave the device at that point</strong>. They are
+  never sent to us and we have no access to them.
+</p>
+
+<p>
+  This step is optional. If it fails, or if you are offline, the app works
+  normally — only the place name is missing. You can also type your city in by
+  hand instead of using automatic location.
+</p>
+
+<h2>3. Advertising</h2>
+
+<p>
+  Salat is free and supported by advertising, served through
+  <strong>Google AdMob</strong>. To serve ads, AdMob may use your device's
+  advertising ID, technical information about the device, and an approximate
+  location derived from your IP address.
+</p>
+
+<p>
+  We do not pass your GPS location to AdMob, and we provide no personal data
+  to advertisers.
+</p>
+
+<h3>Your consent in the EEA, the UK and Switzerland</h3>
+
+<p>
+  Before any ad is shown, an IAB TCF-compliant consent screen asks for your
+  choice about personalised advertising. If you decline, you will see
+  non-personalised ads and the app remains fully usable.
+</p>
+
+<p>
+  You can change that choice at any time from
+  <strong>Settings → Privacy options</strong> in the app.
+</p>
+
+<p>
+  For details of the data Google processes, see
+  <a href="https://policies.google.com/technologies/partner-sites">Google's privacy policy</a>.
+</p>
+
+<h2>4. Notifications</h2>
+
+<p>
+  Prayer reminders are scheduled locally by Android. No notification goes
+  through a server: there is no push messaging, and therefore no device token
+  registered anywhere.
+</p>
+
+<h2>5. Retention and deletion</h2>
+
+<p>
+  All app data lives in the app's own storage on your phone.
+  <strong>Uninstalling Salat erases it completely.</strong>
+  Since we hold nothing, there is nothing to ask us to delete.
+</p>
+
+<p>
+  You can withdraw the location permission at any time in Android's settings.
+  The app keeps working — it will simply ask you to type your city.
+</p>
+
+<h2>6. Children</h2>
+
+<p>
+  Salat is not directed at children under 13 and is not designed for them.
+</p>
+
+<h2>7. Your rights (GDPR)</h2>
+
+<p>
+  If you live in the European Economic Area, the United Kingdom or
+  Switzerland, you have rights of access, rectification, erasure,
+  restriction, objection and portability.
+</p>
+
+<p>
+  In practice we hold no data about you, so these rights are exercised
+  directly on your device — withdrawing the permission, changing your
+  advertising consent, or uninstalling. For data Google processes as a
+  controller, please contact Google.
+</p>
+
+<h2>8. Changes</h2>
+
+<p>
+  Any change to this policy will be published on this page, with a new
+  last-updated date.
+</p>
+
+<h2>9. Contact</h2>
+
+<p>
+  For any question about this policy:
+  <a href="mailto:chocham.123@gmail.com">chocham.123@gmail.com</a>
+</p>
+
+</body>
+</html>
